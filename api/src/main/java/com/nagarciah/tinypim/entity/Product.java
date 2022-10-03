@@ -22,6 +22,19 @@ public class Product {
 	@NotNull
 	private String name;
 
+	public Product() {
+	}
+
+	public Product(Long id, @NotNull String name, @NotNull ProductOnlineStatus onlineStatus, String shortDescription,
+			String longDescription) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.onlineStatus = onlineStatus;
+		this.shortDescription = shortDescription;
+		this.longDescription = longDescription;
+	}
+
 	@NotNull
 	private ProductOnlineStatus onlineStatus;
 
@@ -70,5 +83,13 @@ public class Product {
 
 	public void setLongDescription(String longDescription) {
 		this.longDescription = longDescription;
+	}
+
+	public List<Category> getCategories() {
+		return categories;
+	}
+
+	public void setCategories(List<Category> categories) {
+		this.categories = categories;
 	}
 }
