@@ -14,6 +14,9 @@ The project uses SpringBoot with Maven, so you can also build a fat jar by execu
   - password is empty
 - The API REST documentation is available at http://localhost:8080/swagger-ui/index.html
 
+# Docker Deployment
+A minimalistic Dockerfile and [script](api/docker-build.sh) are included to build locally a docker image. You should have a running local setup of Docker and Java 17 SDK to build the jar file and the docker image.
+
 # Other Info
 
 - Code: https://github.com/nagarciah/tinypim
